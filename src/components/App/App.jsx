@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import Header from '../Header/Header';
+import UserForm from '../User/UserForm';
 import Sidebar from '../Sidebar/Sidebar';
 import AppRoutes from '../Routes/Routes';
 import Footer from '../Footer/Footer';
@@ -20,10 +21,14 @@ function App() {
   return (
     <div className="app">
       <Header />
+
+      <UserForm />
+
       <div className="container">
         <Sidebar />
         <AppRoutes />
       </div>
+
       <Footer />
     </div>
   );

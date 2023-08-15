@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../../styles/Products.module.css';
 import { Link } from 'react-router-dom';
 
-function Products({ title, style = {}, products = [], amount }) {
+const Products = ({ title, style = {}, products = [], amount }) => {
   const list = products.filter((_, i) => i < amount);
 
   return (
@@ -34,6 +34,6 @@ function Products({ title, style = {}, products = [], amount }) {
       </div>
     </section>
   );
-}
+};
 
 export default Products;
